@@ -31,6 +31,7 @@ The selected scans data evaluated in the paper can be downloaded using:
 ```
 bash data/download_data.sh 
 ```
+For more information on the data convention and how to run VolSDF on a new data please have a look at <a href="https://github.com/lioryariv/volsdf/blob/main/DATA_CONVENTION.md">data convention</a>.<br><br>
 
 ## Usage
 #### Multiview 3D reconstruction
