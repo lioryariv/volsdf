@@ -12,8 +12,8 @@ Each "world_mat" matrix is a concatenation of the camera projection matrix with 
 The `cameras.npz` contains also one normalization matrix named "scale_mat_{i}" (identical for all i) for changing the coordinates system such that the cameras and the region of interest are located inside a sphere with radius 3 located at the origin (more details are in the paper).
 
 
-### Preprocess
-For converting BlendedMVS cameras format to ours, run:
+### Preprocess new data
+For converting BlendedMVS cameras format to ours (not required for the supplied scans), run :
 ```
 cd data/preprocess/
 python parse_cameras_blendedmvs.py --blendedMVS_path [BLENDED_MVS_PATH] --output_cameras_file [OUTPUT_CAMERAS_NPZ_FILE] --scan_ind [BLENDED_MVS_SCAN_ID]
