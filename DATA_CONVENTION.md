@@ -49,7 +49,8 @@ for ii in images:
     M[:,3]=cur_image.tvec
     M[:3,:3]=qvec2rotmat(cur_image.qvec)
 
-    P=K@M
+    P=np.zeros((4,4))
+    P[:3,:] = K@M
     cameras_npz_format['world_mat_%d' % ii] = P
     
  np.savez(
