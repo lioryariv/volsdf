@@ -42,7 +42,7 @@ K[0, 2] = cameras[1].params[2]
 K[1, 2] = cameras[1].params[3]
 
 cameras_npz_format = {}
-for ii in images:
+for ii in range(len(images)):
     cur_image=images[ii]
 
     M=np.zeros((3,4))
