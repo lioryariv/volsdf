@@ -53,7 +53,7 @@ for ii in images:
     P[:3,:] = K@M
     cameras_npz_format['world_mat_%d' % ii] = P
     
- np.savez(
+np.savez(
         "cameras_before_normalization.npz",
         **cameras_npz_format)
  
