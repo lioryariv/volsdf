@@ -29,7 +29,7 @@ python normalize_cameras.py --input_cameras_file [INPUT_CAMERAS_NPZ_FILE] --outp
 where the last argument is optional and used for limiting the number of cameras such that only the first [NUMBER_OF_CAMERAS_LIMIT] cameras are considered, which is useful for the DTU dataset, where for scan_id<80 only the first 49 cameras out of 64 are used.   
 
 
-## Parsing COLMAP cameras
+#### Parsing COLMAP cameras
 It is possible to convert COLMAP cameras to our cameras format using Python. First the functions read_cameras_text,read_images_text, qvec2rotmat should be imported from https://github.com/colmap/colmap/blob/dev/scripts/python/read_write_model.py.  Then the following Python code can be used: 
 
 ```
