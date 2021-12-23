@@ -6,9 +6,7 @@ import os
 from pyhocon import ConfigFactory
 import torch
 import numpy as np
-import cvxpy as cp
 from PIL import Image
-import math
 from tqdm import tqdm
 import pandas as pd
 
@@ -119,7 +117,7 @@ def evaluate(**kwargs):
 
         # Taking the biggest connected component
         components = mesh.split(only_watertight=False)
-        areas = np.array([c.area for c in components], dtype=np.float)
+        areas = np.array([c.area for c in components], dtype=np.float32)
         mesh_clean = components[areas.argmax()]
 
         mesh_folder = '{0}/{1}'.format(evaldir, epoch)
