@@ -57,4 +57,4 @@ for ii in images:
         **cameras_npz_format)
  
 ```
-Note that you will have to normalize the camera after running this code. 
+Note that you will have to normalize the cameras after running this code by running normalize_cameras.py as described above. 
